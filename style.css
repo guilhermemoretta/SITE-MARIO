@@ -114,21 +114,26 @@ textarea {
   );
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
   .caixa-principal {
     width: 100%;
-    padding: 20px 5%;
+    padding: 20px 5% 20px;
   }
 
   .logo-mario {
-    width: 80px;
-    margin-top: 3px;
-    padding-left: 15%;
+    width: 100%;
+    max-width: 170px;
+    margin-left: 75px;
+    
+    
   }
 
   p {
-    width: 100%;
+    margin-top: 10px;
     font-size: 14px;
+    text-align: justify;
+    line-height: 22px;
+    
   }
 
   button {
@@ -137,28 +142,25 @@ textarea {
   }
 
   .imagem-mario-luigi {
-    width: 100%;
-    height: 300px;
-    padding: 25px;
-    margin-top: px;
+    width: 240px;
+    height: auto;
+    
+    
   }
 
-  .mascara-video {
-    position: relative;
-  }  
-
   body {
-    display: block;
-    align-items: center;
+    flex-direction: column;
+    
+    height: 90%;
   }
 
   .fale-conosco {
     display: flex;
     position: fixed;
     z-index: 4;
-   
+    left: -285px;
     transition: left 0.5s linear;
-    margin-bottom: 200px;
+    
     
   }
 }
